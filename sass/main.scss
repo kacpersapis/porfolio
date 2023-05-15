@@ -1,7 +1,7 @@
 @import './animation';
 @import './colors';
 *,
-*::before,
+// *::before,
 *::after {
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
@@ -92,7 +92,7 @@ html {
 	align-items: center;
 	width: 40px;
 	height: 40px;
-	font-size: 20px;
+	font-size: 3rem;
 	text-decoration: none;
 	margin: 30px 15px 30px 0;
 }
