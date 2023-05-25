@@ -13,17 +13,25 @@
 
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/809b11ff57.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("ipLs6_kdigVksBh9N");
+   })();
+</script>
 </head>
 
 <body>
 
     <div class="header">
-        <a href="#" class="navbar-logo"><img src="./img/logo-small.png"></a>
-
+        
+        <a href="#" class="navbar-logo nav-link"><img src="./img/logo-small.png"></a>
         <nav class="navbar">
-            <a href="#about" class="active">About</a>
-            <a href="#project">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#project" class="nav-link">Projects</a>
+            <a href="#contact"class="nav-link">Contact</a>
         </nav>
     </div>
 
@@ -255,14 +263,14 @@
                         <a href="https://github.com/kacpersapis" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                     </div>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                <!-- <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" id='name' required>
+                        <input type="email" name="Email" placeholder="Your Email" id='email'required>
+                        <textarea name="Message" rows="6" id='message' placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" onclick="sendMail()">Submit</button>
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -276,7 +284,7 @@
   </script>
 
       
-<script>
+<!-- <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwqZs2rLQb_SSAz_9DglK33c-1S-dzuzxDYIteb8TSn6jV0h70PdWPrp2vWGVaiXvgv/exec'
     const form = document.forms['submit-to-google-sheet']
   
@@ -286,7 +294,8 @@
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+  </script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/main.js"></script>
    

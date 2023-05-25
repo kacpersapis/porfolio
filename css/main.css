@@ -61,6 +61,7 @@ html {
 .navbar-logo {
   font-size: 10px;
   animation: slide 2s ease forwards;
+  padding-right: 50%;
 }
 
 .navbar a {
@@ -585,22 +586,5 @@ form .btn2 {
   }
   .about-col-2 {
     flex-basis: 60%;
-  }
-  .contact-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .contact-left {
-    flex-basis: 35%;
-  }
-  .contact-left p {
-    text-align: left;
-  }
-  .contact-right {
-    flex-basis: 60%;
-  }
-  .contact-title {
-    margin-top: 0;
   }
 }/*# sourceMappingURL=main.css.map */

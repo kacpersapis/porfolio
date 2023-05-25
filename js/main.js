@@ -1,3 +1,5 @@
+
+
 let circularProgress = document.querySelector('.circular-progress'),
     progressValue = document.querySelector('.progress-value'),
     circularProgressTwo = document.querySelector('.two'),
@@ -16,6 +18,8 @@ let circularProgress = document.querySelector('.circular-progress'),
     progressValueEight = document.querySelector('.eight-2');
 
 const footerYear = document.querySelector('.year');
+
+
 
 const handleCurrentYear = () => {
 	const year = new Date().getFullYear()
@@ -168,3 +172,36 @@ var typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 })
+
+navbar = document.querySelector('.header').querySelectorAll('a');
+navbar.forEach(element => {
+    element.addEventListener('click', function(){
+        navbar.forEach(nav=>nav.classList.remove('active'))
+        this.classList.add('active');
+    })
+});
+
+// contact 
+function sendMail() {
+    var params = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+    };
+    const serviceID = 'service_6uwaey4';
+    const templateID = 'template_wd3hfui';
+    
+    emailjs
+    .send(serviceID, templateID, params)
+    .then(
+        (res) =>{
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+            console.log(res);
+            alert('Your message sent successfully');
+        }
+    )
+    .catch((err) => console.log(err));
+}
+// /contact 
