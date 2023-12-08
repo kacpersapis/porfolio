@@ -41,7 +41,6 @@ html {
 	margin: 6px 0;
 }
 
-
 .navbar {
 	display: flex;
 }
@@ -50,7 +49,6 @@ html {
 	display: flex;
 	padding: 10px;
 }
-
 
 .navbar-logo {
 	font-size: 10px;
@@ -61,12 +59,9 @@ html {
 	font-size: 2rem;
 	color: #5baeb4;
 	text-decoration: none;
-	// margin-left: 35px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	transition: 0.3s;
-	// opacity: 0;
-	// animation: slideRight 2s ease forwards;
 }
 
 .navbar a:hover,
@@ -120,17 +115,6 @@ html {
 	text-decoration: none;
 	margin: 30px 15px 30px 0;
 }
-
-// .btn {
-// 	display: inline-block;
-// 	padding: 12px 28px;
-// 	background: #5baeb4;
-// 	border-radius: 8px;
-// 	font-size: 2rem;
-// 	color: #151a21;
-// 	letter-spacing: 2px;
-// 	text-decoration: none;
-// }
 
 // about me
 #about {
@@ -189,7 +173,6 @@ html {
 
 .tab-contents ul li {
 	color: #ededed;
-	// list-style: none;
 	margin: 10px 18px;
 	font-size: 1.5rem;
 }
@@ -199,10 +182,7 @@ html {
 	margin: 10px 0;
 	font-size: 1.5rem;
 }
-// .tab-contents ul li span {
-// 	color: #5baeb4;
-// 	font-size: 2.5rem;
-// }
+
 .company-name {
 	color: #5baeb4;
 	font-size: 3.5rem;
@@ -239,7 +219,6 @@ html {
 		text-align: center;
 		color: rgb(255, 255, 255);
 		letter-spacing: 1px;
-		// padding: 0.5em;
 		margin-bottom: 0;
 		padding: 2em 0 0 0;
 	}
@@ -273,7 +252,6 @@ html {
 
 .skills {
 	display: flex;
-	// display: inline-block;
 	background-color: $bgc2;
 	width: 120px;
 	// 320
@@ -287,9 +265,7 @@ html {
 .circular-progress {
 	position: relative;
 	height: 75px;
-	// 150
 	width: 75px;
-	// 150
 	border-radius: 50%;
 	background: conic-gradient(#5baeb4 3.6deg, #ededed 0deg);
 	display: flex;
@@ -501,7 +477,7 @@ form .btn2 {
 // media
 @media (min-width: 375px) {
 	.home {
-		display: block;
+		// display: block;
 		padding: 15em 4em 0 4em;
 	}
 
@@ -509,11 +485,6 @@ form .btn2 {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.home-img img {
-		// width: 100%;
-		padding: 3em;
 	}
 
 	.btn {
@@ -603,30 +574,15 @@ form .btn2 {
 		padding: 15em 10em 10em 10em;
 	}
 
-	// 	.home-img {
-	// 	display: flex;
-	// 	align-items: center;
-	// 	justify-content: center;
-	// 	padding: 0 0 0 50px;
-	// }
-	.home-img img {
-		// width: 100%;
-		padding: 3em;
-	}
+	
 
-	// .btn {
-	// 	display: inline-block;
-	// 	padding: 12px 28px;
-	// 	background: #5baeb4;
-	// 	border-radius: 8px;
-	// 	font-size: 2rem;
-	// 	color: #151a21;
-	// 	letter-spacing: 2px;
-	// 	text-decoration: none;
-	// }
 	.navbar a {
 		margin-left: 35px;
 	}
+	.home-img {
+		padding: 3rem;
+	}
+
 }
 
 @media (min-width: 992px) {
@@ -667,26 +623,9 @@ form .btn2 {
 		flex-basis: 60%;
 	}
 
-	// contact
-	// 	.contact-row {
-	// 		display: flex;
-	// 		justify-content: space-between;
-	// 		align-items: center;
-	// 	}
-	// 	.contact-left {
-	// 		flex-basis: 35%;
-	// 	}
-	// 	.contact-left p {
-	// 		text-align: left;
-	// 	}
-	// 	.contact-right {
-	// 		flex-basis: 60%;
-	// 	}
-	// 	.contact-title{
-	// 	margin-top: 0;
-	// }
+	
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.burger-menu {
 		display: block;
 	}
@@ -712,10 +651,21 @@ form .btn2 {
 	.burger-menu.active div:nth-child(3) {
 		transform: rotate(45deg) translate(-5px, -6px);
 	}
-	// .navbar.active {
-	//     display: flex;
-	// }
+	
 	.navbar.active {
 		opacity: 1;
 	}
+	.home-img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.home-img img {
+		padding: 20px;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	
 }
+
