@@ -13,26 +13,29 @@
 
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/809b11ff57.js" crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("ipLs6_kdigVksBh9N");
-   })();
-</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ipLs6_kdigVksBh9N");
+        })();
+    </script>
 </head>
 
 <body>
 
     <div class="header">
-        
         <a href="#" class="navbar-logo nav-link"><img src="./img/logo-small.png"></a>
         <nav class="navbar">
             <a href="#about" class="nav-link">About</a>
             <a href="#project" class="nav-link">Projects</a>
-            <a href="#contact"class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </div>
 
     <section class="home">
@@ -40,7 +43,10 @@
             <h3 data-aos="fade-right" data-aos-delay="200">Hi, My name is</h3>
             <h1 data-aos="fade-right" data-aos-delay="400">Kacper Sapis</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p data-aos="fade-right" data-aos-delay="600">Web developer with over 1 year of front end experience and passion for responsive website design and a firm believer in the mobile-first approach.</p>
+            <p data-aos="fade-right" data-aos-delay="600">With over 1 year of front-end development experience, I am
+                passionate about crafting responsive designs and advocate for a mobile-first approach. Proficient in
+                WordPress development, I merge creative design with efficient functionality, offering versatility and
+                dedication in web development.</p>
 
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/kacper-sapis-201a89196/"><i class="fa-brands fa-linkedin"></i></a>
@@ -48,8 +54,8 @@
 
             </div>
             <div class="btn-cv">
-            <a href="./img/FE CV.pdf" download class="btn">Download CV</a>
-        </div>
+                <a href="./img/CV_Kacper-Sapis.pdf" download class="btn">Download CV</a>
+            </div>
         </div>
         <div class="home-img">
             <img src="./img/70140656b.png" alt="">
@@ -64,12 +70,15 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title" data-aos="zoom-in" data-aos-delay="200">About me</h1>
-                    <p class="about-text" data-aos="zoom-in" data-aos-delay="400">I am a young creative person who builds my experience
-                        by running my own business and I received training many courses to improve my
-                        personal development. I am not afraid of what is new and I am happy to take up
-                        new challenges. I treat each day as an opportunity to broaden my competences
-                        and horizons. <br><br>I am interested in innovative solutions, automation of processes
-                        taking place in the company, data analysis and modern forms of business.</p>
+                    <p class="about-text" data-aos="zoom-in" data-aos-delay="400">I have gained valuable experience
+                        working in an agency that executes projects from around the world. This experience has allowed
+                        me to contribute to a diverse range of endeavors. As a dynamic individual, I continually enhance
+                        my skills through various courses and personal development initiatives. Embracing novelty and
+                        welcoming challenges, I view each day as an opportunity to expand my competencies and horizons.
+                        <br><br>
+                        I am interested in innovative solutions, automation of processes
+                        taking place in the company, data analysis and modern forms of business.
+                    </p>
 
                     <div class="tab-titles">
                         <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
@@ -117,7 +126,7 @@
                                 <div class="circular-progress seven-1">
                                     <span class="progress-value seven-2">0%</span>
                                 </div>
-                                <span class="text">VSC</span>
+                                <span class="text">PHP</span>
                             </div>
                             <div class="skills">
                                 <div class="circular-progress eight-1">
@@ -129,19 +138,33 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Znajdebusa | znajdebusa.pl</span><br><br> As a webdeveloper, I have created and
-                                co-own a website and a webservice. I have
-                                personally contributed to coming up with the idea and to the writing of the code. I
-                                am responsible for promoting the website and acquiring new clients through social
-                                media and e-mail marketing. I have designed the graphics for the website and the
-                                leaflets.</li>
-                            <li><span>IMADO | imado.co</span><br><br> As an intern, I have participated in designing and
-                                creating graphics for websites and
-                                attracting new customers. I have also participated in creating Facebook Ads and
-                                Google Ads campaigns.</li>
-
+                            <li class="experience-item">
+                                <span class="company-name">Web Developer at IMADO - imado.co</span><br><br>
+                                <span class="date">1.10.2022 - Present</span><br><br>
+                                <p class="job-description">
+                                    As a Web Developer at an agency specializing in website development, I played a key
+                                    role in diverse projects, including:
+                                <ul class="project-list">
+                                    <li>Designing and implementing responsive websites with a focus on the
+                                        "mobile-first" approach.</li>
+                                    <li>Collaborating with clients worldwide, tailoring solutions to meet their
+                                        individual needs.</li>
+                                    <li>Leveraging cutting-edge web technologies to ensure project efficiency and
+                                        modernity.</li>
+                                    <li>Integrating CMS solutions, including WordPress, to deliver dynamic content to
+                                        clients.</li>
+                                    <li>Optimizing websites for performance, loading speed, and user experience.</li>
+                                    <li>Collaborating with designers, developers, and other specialists to achieve
+                                        project goals.</li>
+                                </ul>
+                                This experience has allowed me to enhance my skills in designing responsive interfaces,
+                                effectively engaging with clients, and maintaining high-quality standards within the web
+                                development industry.
+                                </p>
+                            </li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -171,21 +194,26 @@
                         <h3 class="offers__option-heading">Leśny Zakątek</h3>
                         <div class="offers__option-i">
                             <div class="offers__option-titles">
-                            <p class="offers__option-title">Page speed:</p>
-                            <p class="offers__option-index">95/100</p>
+                                <p class="offers__option-title">Page speed:</p>
+                                <p class="offers__option-index">95/100</p>
+                            </div>
+                            <div class="offers__option-titles">
+                                <p class="offers__option-title">
+                                    Speed Index</p>
+                                <p class="offers__option-index">0.8 s</p>
+                            </div>
                         </div>
-                        <div class="offers__option-titles">
-                            <p class="offers__option-title">
-                                Speed Index</p>
-                            <p class="offers__option-index">0.8 s</p>
-                        </div>
-                        </div>
-                        <p class="offers__option-text">One of my favorite projects, created for the accommodation and recreation industry.</p>
-                        <p class="offers__option-text">When creating this project, I took into account the colors that match the accommodation industry, and more specifically, small houses for rent in the forest. A lot of animations and transparency of the website make the client trust us.
+                        <p class="offers__option-text">One of my favorite projects, created for the accommodation and
+                            recreation industry.</p>
+                        <p class="offers__option-text">When creating this project, I took into account the colors that
+                            match the accommodation industry, and more specifically, small houses for rent in the
+                            forest. A lot of animations and transparency of the website make the client trust us.
                         </p>
                         <div class="offers__option-links">
-                           <a  class="offers__option-links--live" href="https://kacpersapis.github.io/LesnyZakatek/" target="_blank">View Live Version </a> 
-                           <a  class="offers__option-links--live" href="https://github.com/kacpersapis/LesnyZakatek" target="_blank">Repository </a> 
+                            <a class="offers__option-links--live" href="https://kacpersapis.github.io/LesnyZakatek/"
+                                target="_blank">View Live Version </a>
+                            <a class="offers__option-links--live" href="https://github.com/kacpersapis/LesnyZakatek"
+                                target="_blank">Repository </a>
                         </div>
 
                     </div>
@@ -197,22 +225,24 @@
                         <h3 class="offers__option-heading">Znajdebusa.pl</h3>
                         <div class="offers__option-i">
                             <div class="offers__option-titles">
-                            <p class="offers__option-title">Page speed:</p>
-                            <p class="offers__option-index">95/100</p>
-                        </div>
-                        <div class="offers__option-titles">
-                            <p class="offers__option-title">
-                                Speed Index</p>
-                            <p class="offers__option-index">0.7 s</p>
-                        </div>
+                                <p class="offers__option-title">Page speed:</p>
+                                <p class="offers__option-index">95/100</p>
+                            </div>
+                            <div class="offers__option-titles">
+                                <p class="offers__option-title">
+                                    Speed Index</p>
+                                <p class="offers__option-index">0.7 s</p>
+                            </div>
                         </div>
                         <p class="offers__option-text">A reposnsive website for a passenger transport company.
                         </p>
-                        <p class="offers__option-text">My participation in the creation of this site was based on the front end, writing texts, selecting images and colors..</p>
-                            <div class="offers__option-links">
-                                <a  class="offers__option-links--live" href="https://znajdebusa.pl/" target="_blank">View Live Version </a> 
-                             
-                             </div>
+                        <p class="offers__option-text">My participation in the creation of this site was based on the
+                            front end, writing texts, selecting images and colors..</p>
+                        <div class="offers__option-links">
+                            <a class="offers__option-links--live" href="https://znajdebusa.pl/" target="_blank">View
+                                Live Version </a>
+
+                        </div>
                     </div>
                 </div>
                 <div class="offers__option">
@@ -225,22 +255,27 @@
                         <h3 class="offers__option-heading">Progress Travel</h3>
                         <div class="offers__option-i">
                             <div class="offers__option-titles">
-                            <p class="offers__option-title">Page speed:</p>
-                            <p class="offers__option-index">94/100</p>
+                                <p class="offers__option-title">Page speed:</p>
+                                <p class="offers__option-index">94/100</p>
+                            </div>
+                            <div class="offers__option-titles">
+                                <p class="offers__option-title">
+                                    Speed Index</p>
+                                <p class="offers__option-index">0.8 s</p>
+                            </div>
                         </div>
-                        <div class="offers__option-titles">
-                            <p class="offers__option-title">
-                                Speed Index</p>
-                            <p class="offers__option-index">0.8 s</p>
-                        </div>
-                        </div>
-                        <p class="offers__option-text">Another project I created will go to the client of the passenger transport company.
+                        <p class="offers__option-text">Another project I created will go to the client of the passenger
+                            transport company.
                         </p>
-                        <p class="offers__option-text">A simple one page website is based on front and back end, created in such a way that the customer can view the customer's offer in a simple and intuitive way and book the selected means of transport.</p>
-                            <div class="offers__option-links">
-                                <a  class="offers__option-links--live" href="https://kacpersapis.github.io/Progress-Travel/" target="_blank">View Live Version </a> 
-                                <a  class="offers__option-links--live" href="https://github.com/kacpersapis/Progress-Travel" target="_blank">Repository </a> 
-                             </div>
+                        <p class="offers__option-text">A simple one page website is based on front and back end, created
+                            in such a way that the customer can view the customer's offer in a simple and intuitive way
+                            and book the selected means of transport.</p>
+                        <div class="offers__option-links">
+                            <a class="offers__option-links--live" href="https://kacpersapis.github.io/Progress-Travel/"
+                                target="_blank">View Live Version </a>
+                            <a class="offers__option-links--live" href="https://github.com/kacpersapis/Progress-Travel"
+                                target="_blank">Repository </a>
+                        </div>
                     </div>
                 </div>
 
@@ -259,8 +294,10 @@
                     <p><i class="fa-solid fa-share-from-square"></i> kacpersapis@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone"></i> +48 791 574 676</p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/kacper-sapis-201a89196/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/kacpersapis" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kacper-sapis-201a89196/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kacpersapis" target="_blank"><i
+                                class="fa-brands fa-square-github"></i></a>
                     </div>
                 </div>
                 <!-- <div class="contact-right">
@@ -274,17 +311,17 @@
             </div>
         </div>
     </section>
-<div class="copyright">
-    <p>Copyright &copy; <span class="year"></span> | Kacper Sapis </p>
-</div>
+    <div class="copyright">
+        <p>Copyright &copy; <span class="year"></span> | Kacper Sapis </p>
+    </div>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
-      
-<!-- <script>
+
+    <!-- <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwqZs2rLQb_SSAz_9DglK33c-1S-dzuzxDYIteb8TSn6jV0h70PdWPrp2vWGVaiXvgv/exec'
     const form = document.forms['submit-to-google-sheet']
   
@@ -298,7 +335,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/main.js"></script>
-   
+
 </body>
 
 </html>

@@ -58,17 +58,36 @@ html {
   z-index: 100;
 }
 
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-menu div {
+  width: 30px;
+  height: 3px;
+  background-color: #5baeb4;
+  margin: 6px 0;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-link {
+  display: flex;
+  padding: 10px;
+}
+
 .navbar-logo {
   font-size: 10px;
   animation: slide 2s ease forwards;
-  padding-right: 50%;
 }
 
 .navbar a {
   font-size: 2rem;
   color: #5baeb4;
   text-decoration: none;
-  margin-left: 35px;
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: 0.3s;
@@ -157,6 +176,7 @@ html {
 .about-text {
   color: #ededed;
   font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 .tab-titles {
@@ -189,14 +209,20 @@ html {
 
 .tab-contents ul li {
   color: #ededed;
+  margin: 10px 18px;
+  font-size: 1.5rem;
+}
+
+.experience-item {
+  color: #ededed;
   list-style: none;
   margin: 10px 0;
   font-size: 1.5rem;
 }
 
-.tab-contents ul li span {
+.company-name {
   color: #5baeb4;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .tab-contents {
@@ -302,6 +328,11 @@ html {
   color: #606060;
 }
 
+.date {
+  color: white;
+  font-size: 2.5rem;
+}
+
 .offers {
   overflow: hidden;
   background-color: #1f242b;
@@ -355,6 +386,7 @@ html {
   margin-bottom: 0.5em;
   font-size: 1.3rem;
   color: rgb(255, 255, 255);
+  line-height: 1.5;
 }
 .offers__option-links {
   display: flex;
@@ -480,7 +512,6 @@ form .btn2 {
     align-items: center;
   }
   .home-img img {
-    width: 100%;
     padding: 3em;
   }
   .btn {
@@ -556,6 +587,9 @@ form .btn2 {
   .home-img img {
     padding: 3em;
   }
+  .navbar a {
+    margin-left: 35px;
+  }
 }
 @media (min-width: 992px) {
   .offers {
@@ -586,5 +620,35 @@ form .btn2 {
   }
   .about-col-2 {
     flex-basis: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: #151a21;
+    z-index: 1;
+    top: 75px;
+    right: 0;
+    opacity: 0;
+    padding: 17px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .burger-menu.active div:nth-child(2) {
+    opacity: 0;
+  }
+  .burger-menu.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .burger-menu.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .navbar.active {
+    opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */
